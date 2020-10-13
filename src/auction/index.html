@@ -2,7 +2,7 @@
 
 {% set description = "We think artist (the creator of the NFT) should always be rewarded. For all the auctions, we allocate 50% of transaction fees to the origial creators of the NFT" %}
 
-{% set urlPage = 'auction' %}
+{% set urlPage = "auction" %}
 
 {% extends "template/base.html" %}
 
@@ -37,6 +37,9 @@
 		<div class="auction__img">
 
 			<picture>
+
+				<source srcset="/img/auction/img--mobile.webp 1x, /img/auction/img--mobile@2x.webp 2x" type="image/webp" media="(max-width: 360px)">
+				<source srcset="/img/auction/img--mobile.png 1x, /img/auction/img--mobile@2x.png 2x" media="(max-width: 360px)">
 
 				<source srcset="/img/auction/img.webp 1x, /img/auction/img@2x.webp 2x" type="image/webp">
 				<source srcset="/img/auction/img.png 1x, /img/auction/img@2x.png 2x">

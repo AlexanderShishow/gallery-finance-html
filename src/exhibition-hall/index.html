@@ -2,7 +2,7 @@
 
 {% set description = "If you just want to display your art and let people enjoy, here is the place." %}
 
-{% set urlPage = 'exhibition-hall' %}
+{% set urlPage = "exhibition-hall" %}
 
 {% extends "template/base.html" %}
 
@@ -45,6 +45,9 @@
 		<div class="exhibition-hall__img">
 
 			<picture>
+
+				<source srcset="/img/exhibition-hall/img--mobile.webp 1x, /img/exhibition-hall/img--mobile@2x.webp 2x" type="image/webp" media="(max-width: 360px)">
+				<source srcset="/img/exhibition-hall/img--mobile.png 1x, /img/exhibition-hall/img--mobile@2x.png 2x" media="(max-width: 360px)">
 
 				<source srcset="/img/exhibition-hall/img.webp 1x, /img/exhibition-hall/img@2x.webp 2x" type="image/webp">
 				<source srcset="/img/exhibition-hall/img.png 1x, /img/exhibition-hall/img@2x.png 2x">

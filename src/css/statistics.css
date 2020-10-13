@@ -1,6 +1,6 @@
 .statistics {
 
-	margin: 90px 0 120px;
+	margin: 72px 0 120px;
 
 	@media ($smWidth) {
 
@@ -47,6 +47,8 @@
 		width: 336px;
 		margin: 18px;
 		padding: 36px;
+		display: flex;
+		flex-direction: column;
 
 	 &.column {
 		display: flex;
@@ -71,7 +73,8 @@
 
 	&__logo {
 
-		margin: -10px auto 25px;
+		margin: -10px auto 26px;
+		flex-shrink: 0;
 
 		@media ($smWidth) {
 
@@ -88,7 +91,12 @@
 			display: flex;
 			justify-content: space-between;
 			white-space: nowrap;
-			margin-top: 9px;
+
+			& + & {
+
+				margin-top: 9px;
+
+			}
 
 		}
 		&-column {
@@ -112,12 +120,53 @@
 
 		}
 
+		&-column-reverse {
+
+			text-align: center;
+			flex-direction: column-reverse;
+			display: flex;
+
+			&-dt {
+
+				color: #000;
+
+			}
+
+			&-dd {
+
+				color: color(#000 a(50%));
+				font-size: 20px;
+
+			}
+
+		}
+
+	}
+
+	&__text {
+
+		font-size: 16px;
+		line-height: 27px;
+		text-align: center;
+		color: color(#000 a(50%));
+		margin-top: 21px;
+
+	}
+
+	&__data {
+
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
 	}
 
 
 	&__btn {
 
-		margin-top: 27px;
+		margin-top: 24px;
+		flex-shrink: 0;
 
 	}
 

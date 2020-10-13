@@ -2,37 +2,9 @@
 
 			<ul class="menu__list">
 
-				<li class="menu__item{% if urlPage === 'about' %} is-current{% endif %}">
+				<li class="menu__item{% if urlPage === 'about' or urlPage === 'about/workshop' or urlPage === 'about/auction' or urlPage === 'about/exhibition-hall' or urlPage === 'about/glf-token'%} is-current{% endif %}">
 
 					<a class="menu__link" href="/about">About</a>
-
-					<ul class="menu__sub">
-						<li>
-							<a href="/about">
-								Summary
-							</a>
-						</li>
-						<li>
-							<a href="/about/workshop">
-								Workshop
-							</a>
-						</li>
-						<li>
-							<a href="/about/auction">
-								Auction
-							</a>
-						</li>
-						<li>
-							<a href="/about/exhibition-hall">
-								Exhibition hall
-							</a>
-						</li>
-						<li>
-							<a href="/about/glf-token">
-								GLF Token
-							</a>
-						</li>
-					</ul>
 
 				</li>
 
