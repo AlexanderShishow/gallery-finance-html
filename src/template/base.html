@@ -7,7 +7,6 @@
 	<title>{{ title }}</title>
 
 	<link href="/css/styles.css" rel="preload" as="style">
-	<link href="/js/scripts.js" rel="preload" as="script">
 
 	<link href="{{ url }}/favicon.png" rel="apple-touch-icon-precomposed">
 
@@ -36,7 +35,6 @@
 {% endif %}
 
 	<link href="/css/styles.css" rel="stylesheet">
-	<script defer src="/js/scripts.js"></script>
 
 {% for item in preloadImage %}
 
@@ -74,6 +72,8 @@
 </div>
 
 {% include "template/modal.html" %}
+
+<script type="module" src="/js/canvas-loader.js"></script>
 
 </body>
 </html>

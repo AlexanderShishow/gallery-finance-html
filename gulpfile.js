@@ -26,7 +26,7 @@ const newer            = require('gulp-newer');
 
 const debug            = require('gulp-debug');
 
-const w3cjs            = require('gulp-w3cjs');
+//const w3cjs            = require('gulp-w3cjs');
 
 let config             = null;
 
@@ -58,7 +58,7 @@ gulp.task('html', function() {
 			},
 			path: 'src/'
 		}))
-		.pipe(w3cjs({
+		/*.pipe(w3cjs({
 			verifyMessage: function(type, message) {
 
 				// prevent logging error message
@@ -70,7 +70,7 @@ gulp.task('html', function() {
 				return true;
 			}
 		}))
-		.pipe(w3cjs.reporter())
+		.pipe(w3cjs.reporter())*/
 		.pipe(gulp.dest('build'))
 
 });
@@ -87,7 +87,7 @@ gulp.task('html-touch', function() {
 			},
 			path: 'src/'
 		}))
-		.pipe(w3cjs({
+		/*.pipe(w3cjs({
 			verifyMessage: function(type, message) {
 
 				// prevent logging error message
@@ -99,7 +99,7 @@ gulp.task('html-touch', function() {
 				return true;
 			}
 		}))
-		.pipe(w3cjs.reporter())
+		.pipe(w3cjs.reporter())*/
 		.pipe(gulp.dest('build'))
 
 });
